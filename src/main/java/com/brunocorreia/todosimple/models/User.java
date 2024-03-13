@@ -1,9 +1,5 @@
 package com.brunocorreia.todosimple.models;
 
-import org.antlr.v4.runtime.misc.NotNull;
-import org.apache.commons.logging.Log;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -158,6 +154,10 @@ public boolean equals(Object o) {
     }
     return Objects.equals(userName, other.userName) &&
             Objects.equals(password, other.password);
+}
+
+public static String getTableName() {
+    return TABLE_NAME;
 }
 
 }

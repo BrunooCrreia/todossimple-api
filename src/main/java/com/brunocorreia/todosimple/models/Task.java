@@ -14,6 +14,7 @@ import java.util.Objects;
 
 import org.antlr.v4.runtime.misc.NotNull;
 
+@SuppressWarnings("deprecation")
 @Entity
 @Table(name = Task.TABLE_NAME)
 public class Task {
