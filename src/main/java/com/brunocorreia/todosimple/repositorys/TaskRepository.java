@@ -21,6 +21,8 @@ public interface TaskRepository extends JpaRepository<User, Long>{
   @Query(value = "SELECT * FROM TASK t WHERE t.user_id = :id",nativeQuery = true)
   List<Task> findByUserId(@Param("id") Long id); // param vincula o nome inserido a referencia dentro da query nativa
 
+void savAll(List<Task> tasks);
+
 
 
   
